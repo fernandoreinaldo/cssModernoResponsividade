@@ -34,6 +34,77 @@
     border-color: black;
 }
 
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .main{
     flex: 1 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-template-areas:
+    "bemvindo bemvindo bemvindo bemvindo"
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item4"
+    "item8 item9 item10 item4";    
+}
+
+/* .bemvindo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+} */
+
+.bemvindo{
+    text-align: center;
+}
+
+.item{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+
+.item4{
+    grid-area: item4;
+}
+
+.item5{
+    grid-area: item5;
+}
+
+.item6{
+    grid-area: item6;
+}
+
+.item7{
+    grid-area: item7;
+}
+
+.item8{
+    grid-area: item8;
+}
+
+.item9{
+    grid-area: item9;
+}
+
+.item10{
+    grid-area: item10;
 }
