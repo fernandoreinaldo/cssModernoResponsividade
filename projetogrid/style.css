@@ -53,17 +53,6 @@
     "item8 item9 item10 item4";    
 }
 
-/* .bemvindo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid black 2px;
-} */
-
-.bemvindo{
-    text-align: center;
-}
-
 .item{
     border: 2px solid black;
     border-radius: 5px;
