@@ -2,36 +2,42 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 .header{
-    background-color: rgb(34, 34, 34);
+    width: 100%;
+    min-height: 40px;
+    background-color: rgb(29, 29, 29);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 8px 15px;
 }
 
 .logo-onebitcode{
-    width: 200px;
+    width: 180px;
 }
 
 .buttons{
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .buttonHeader{
     font-size: 15px;
-    padding: 10px;
+    padding: 6px;
     background-color: transparent;
-    border-color: rgb(34, 34, 34);
+    border: 2px solid transparent;
     color: white;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .buttonHeader:hover{
-    border-color: black;
+    border-bottom: 2px solid black;
 }
 
 .container{
