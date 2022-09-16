@@ -58,17 +58,29 @@
     color: #383838;
 }
 
-.main{
-    flex: 1 0 auto;
-    padding: 10px;
+.gridContainer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    grid-template-areas:
-    "bemvindo bemvindo bemvindo bemvindo"
-    "item1 item2 item3 item4"
-    "item5 item6 item7 item4"
-    "item8 item9 item10 item4";    
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "mainContent sidebarContent";
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+.mainCardImg{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.sidebarCardImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.categoryCard{
+    width: 280px;
+    height: 380px;
 }
 
 .item{
