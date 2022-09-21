@@ -114,6 +114,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 300px;
+    grid-area: sidebarContent;
+    gap: 20px;
+}
+
+.sidebarCard{
+    width: 75%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sidebarCard:hover{
+    border-color: gainsboro;
+}
+
+.sidebarCardTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.categoryTitle{
+    background-color: black;
 }
 
 .item{
