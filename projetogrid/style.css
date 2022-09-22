@@ -66,15 +66,12 @@
     flex: 1 0 auto;
 }
 
-.mainCardImg{
-    width: 100%;
-    height: 180px;
-    border-radius: 10px;
-}
-
-.sidebarCardImg{
-    width: 100%;
-    border-radius: 10px;
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: mainContent;
 }
 
 .categoryCard{
@@ -86,12 +83,10 @@
     cursor: pointer;
 }
 
-.mainContent{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    grid-area: mainContent;
+.mainCardImg{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
 }
 
 .categoryCard:hover{
@@ -119,6 +114,7 @@
     gap: 20px;
 }
 
+
 .sidebarCard{
     width: 75%;
     border: 1px solid transparent;
@@ -127,8 +123,9 @@
     cursor: pointer;
 }
 
-.sidebarCard:hover{
-    border-color: gainsboro;
+.sidebarCardImg{
+    width: 100%;
+    border-radius: 10px;
 }
 
 .sidebarCardTitle{
@@ -136,52 +133,60 @@
     text-align: center;
     padding: 10px;
 }
+.sidebarCard:hover{
+    border-color: gainsboro;
+}
 
 .categoryTitle{
     background-color: black;
 }
 
-.item{
-    border: 2px solid black;
-    border-radius: 5px;
+.logoFooter{
+    width: 180px;
 }
 
-.item1{
-    grid-area: item1;
+.footerAnchor{
+    color: white;
+    text-decoration: none;
 }
 
-.item2{
-    grid-area: item2;
+
+.footer{
+    width: 100%;
+    min-height: 40px;
+    background-color: #292929;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 15px;
 }
 
-.item3{
-    grid-area: item3;
+
+@media(max-width: 630px){
+    .gridContainer{
+        grid-template-areas: 
+        "mainContent"
+        "sidebarContent";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .sidebarContent{
+        min-width: auto;
+    }
+    .footerAnchor{
+        font-size: 19px;
+    }
 }
 
-.item4{
-    grid-area: item4;
-}
-
-.item5{
-    grid-area: item5;
-}
-
-.item6{
-    grid-area: item6;
-}
-
-.item7{
-    grid-area: item7;
-}
-
-.item8{
-    grid-area: item8;
-}
-
-.item9{
-    grid-area: item9;
-}
-
-.item10{
-    grid-area: item10;
+@media(max-width: 455px){
+    .header{
+        justify-content: center;
+    }
+    .footer{
+        justify-content: center;
+    }
 }
